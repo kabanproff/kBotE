@@ -28,7 +28,7 @@ const start = () => {
 		if (text === '/start') {
 			// await bot.sendSticker(chatId, 'https://gamerwall.pro/uploads/posts/2022-03/1648588898_1-gamerwall-pro-p-mrachnii-zadnii-fon-krasivie-1.jpg');
 			await bot.sendSticker(chatId, 'https://tlgrm.ru/_/stickers/b0d/85f/b0d85fbf-de1b-4aaf-836c-1cddaa16e002/1.webp');
-			return await bot.sendMessage(chatId, 'Привет! Вы подключили бота написанного АП');
+			return await bot.sendMessage(chatId, 'Привет! Вы подключили бота написанного Kabanproff');
 		}
 
 		if (text === '/info') {
@@ -37,6 +37,10 @@ const start = () => {
 
 		if (text === '/game') {
 			startGame(chatId)
+		}
+
+		if (text.toLowerCase() === 'давай болтать') {
+			return await bot.sendMessage(chatId, `А чём ты хочешь со мной поболтать, может о погоде?`)
 		}
 		console.log(chat)
 
