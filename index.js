@@ -43,7 +43,7 @@ const start = () => {
 			return await bot.sendMessage(chatId, `А чём ты хочешь со мной поболтать, может о погоде?`)
 		}
 		console.log(chat)
-
+		await bot.sendSticker(chatId, 'https://api.360tv.ru/get_resized/g6iSUxBKslJ1PUmQ3j-g4ERY3MlGJAyPRBK-uht6ZjM/rs:fill-down:1080:810/g:fp:0.5:0.5/aHR0cHM6Ly8yNTc4MjQuc2VsY2RuLnJ1L2JhYnlsb24tbWVkaWEvYXJ0aWNsZXMvaW1hZ2UvMjAyMC8xMS8wOC8xOS8xMzgzODItNjBlOWJlYTdiY2Y5OWI2NTg3NWI3ODYyNDk4MDVhN2NlYTEzYTc4MS5qcGVn.webp');
 		return await bot.sendMessage(chatId, `Не понимаю что ты хочешь ${msg.from.username}`)
 	});
 
